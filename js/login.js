@@ -1,5 +1,13 @@
 document.getElementById("btn-login").addEventListener("click", function (e) {
-  e.preventDefault;
+  e.preventDefault();
   const phoneNumber = document.getElementById("phone-number").value;
-  console.log(phoneNumber);
+
+  const pinnumber = document.getElementById("pin-number").value;
+  // bad way to validation just a sample use
+  if (phoneNumber === "5" && pinnumber === "1234") {
+    console.log("you are logged in");
+    window.location.href = "/home.html";
+  } else {
+    console.log("Wrong Phone Number or Pin Number");
+  }
 });
