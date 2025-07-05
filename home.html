@@ -32,7 +32,9 @@
             </div>
             <div class="divider"></div>
             <!--add money form-->
-            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div
+              class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+            >
               <form class="card-body">
                 <div class="form-control">
                   <label class="label">
@@ -66,10 +68,46 @@
               </form>
             </div>
             <!--add money from end-->
+            <!--Cash out money form start-->
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Amount</span>
+                  </label>
+                  <input
+                    id="amount-cash"
+                    type="text"
+                    placeholder="Your Amount"
+                    class="input input-bordered"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Pin</span>
+                  </label>
+                  <input
+                    id="cash-pin-number"
+                    type="password"
+                    placeholder="Your Pin Number"
+                    class="input input-bordered"
+                    required
+                  />
+                </div>
+                <div class="form-control mt-6">
+                  <button id="btn-cashout" class="btn btn-primary">
+                    Cash Out
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!--Cash out money form end-->
           </div>
         </div>
       </div>
     </main>
     <script src="/js/home.js"></script>
+    <script src="js/cashout.js"></script>
   </body>
 </html>
